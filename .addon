@@ -1,0 +1,29 @@
+{
+  "Title": "Persistence",
+  "Type": "library",
+  "Org": "conna",
+  "Ident": "persistence",
+  "Tags": null,
+  "Schema": 1,
+  "HasAssets": true,
+  "AssetsPath": "",
+  "ResourcePaths": null,
+  "HasCode": true,
+  "CodePath": "code",
+  "PackageReferences": [],
+  "EditorReferences": null,
+  "Metadata": {
+    "ProjectTemplate": null,
+    "CsProjName": "",
+    "Compiler": {
+      "RootNamespace": "Sandbox",
+      "DefineConstants": "SANDBOX;ADDON;DEBUG",
+      "NoWarn": "1701;1702;1591;",
+      "References": []
+    },
+    "Summary": "\uD83D\uDCBE A simple persistence system that can be used to serialize and deserialize the game state",
+    "Description": "",
+    "Public": true,
+    "ReplaceTags": "persistence savedgames"
+  }
+}
