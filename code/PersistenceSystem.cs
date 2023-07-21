@@ -32,9 +32,9 @@ public static class PersistenceSystem
 		{
 			UniqueId = Guid.NewGuid().ToString( "N" );
 		}
-
+		
 		w.Write( UniqueId );
-
+		
 		foreach ( var v in Writers )
 		{
 			v( w );
@@ -43,7 +43,7 @@ public static class PersistenceSystem
 		SaveEntities( w );
 
 		w.Write( PersistentId );
-
+		
 		save.Data = s.ToArray();
 
 		Game.Save( save );
@@ -75,7 +75,7 @@ public static class PersistenceSystem
 		}
 
 		LoadEntities( reader );
-
+		
 		PersistentId = reader.ReadUInt64();
 
 		foreach ( var p in Entity.All.OfType<IPersistence>() )
